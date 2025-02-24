@@ -1,5 +1,6 @@
 import React from "react";
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function SignupForm() {
   return (
@@ -38,7 +39,7 @@ export default function SignupForm() {
             type="password"
             id="password"
           />
-          <p className="text-sm text-gray-400 mb-8">8 characters at least</p>
+          <p className="text-sm text-gray-400 mb-2">8 characters at least</p>
         </form>
         <button
           type="submit"
@@ -58,6 +59,12 @@ export default function SignupForm() {
             <FaFacebook />
           </button>
         </span>
+        <p>
+          already have an account?{" "}
+          <Link to="/signin" className="text-blue-700">
+            Signin
+          </Link>
+        </p>
       </div>
     </div>
   );
