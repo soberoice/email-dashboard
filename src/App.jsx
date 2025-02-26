@@ -3,7 +3,6 @@ import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
 import Dashboard from "./pages/Dashboard";
 import ResetPassword from "./pages/ResetPassword";
-import { ChakraProvider } from "@chakra-ui/react";
 import { links } from "./utils/constants";
 import DashboardContent from "./components/DashboardContent";
 import Reports from "./components/Reports";
