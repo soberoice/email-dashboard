@@ -1,5 +1,5 @@
 import React from "react";
-import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { Link } from "react-router";
 
 export default function SigninForm() {
