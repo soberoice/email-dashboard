@@ -4,8 +4,6 @@ import { links, supports } from "../utils/constants";
 import { IoMdClose } from "react-icons/io";
 
 export default function SideNav() {
-  const [page, setPage] = useState("");
-
   return (
     <div className="flex bg-white">
       <div

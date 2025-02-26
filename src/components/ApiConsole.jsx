@@ -6,7 +6,7 @@ export default function ApiConsole() {
   return (
     <div className="mx-auto my-8" style={{ width: "1200px" }}>
       <div
-        className="w-full bg-white text-center p-8 shadow-2xl my-8"
+        className="w-full bg-white text-center p-8 shadow-md my-8"
         style={{ borderRadius: "4px" }}
       >
         <p className="text-4xl text-bold mb-4">API Integrations</p>
@@ -36,7 +36,7 @@ export default function ApiConsole() {
         </p>
       </div>
       <div
-        className="w-full bg-white p-8 shadow-2xl"
+        className="w-full bg-white p-8 shadow-md"
         style={{ borderRadius: "4px", height: "360px" }}
       >
         <span className="flex justify-between">
