@@ -6,7 +6,7 @@ import MessageReportsTable from "./MessageReportsTable";
 
 export default function DashboardContent() {
   return (
-    <div className="mx-auto mt-5 flex-col w-11/12">
+    <div className="mx-auto mt-5 flex-col w-10/12">
       <div
         className="flex rounded-lg p-8"
         style={{ backgroundColor: "#155EEF1A", border: "1px solid #155EEF1A" }}

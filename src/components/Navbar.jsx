@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div
       style={{ borderBottom: "1px solid #E9ECEF" }}
-      className="flex w-full h-20 px-8 items-center text-xl border-b-1 justify-between"
+      className="flex w-full h-20 px-8 items-center text-xl border-b-1 justify-between bg-white"
     >
       <div className="font-semibold">Welcome, David</div>
       <div className="flex my-auto">

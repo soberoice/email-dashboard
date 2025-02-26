@@ -7,7 +7,7 @@ export default function SideNav() {
   const [page, setPage] = useState("");
 
   return (
-    <div className="flex">
+    <div className="flex bg-white">
       <div
         style={{ borderRight: "1px solid #E9ECEF" }}
         className="flex border-gray-300 justify-evenly flex-col w-80 p-3 h-screen border-r-1 text-base"
@@ -57,22 +57,22 @@ export default function SideNav() {
           </div>
 
           {supports.map((link, index) => (
-            <button
-              className="rounded-lg"
-              onClick={() => setPage(link.name)}
-              style={{
-                backgroundColor: page === link.name && "#4263EB",
-                color: page === link.name && "white",
-              }}
+            <NavLink
               key={index}
+              to={
+                link.name === "API Console"
+                  ? "apiconsole"
+                  : link.name.toLowerCase()
+              }
+              className={({ isActive }) =>
+                `rounded-lg block p-3 flex flex-row gap-2 text-base ${
+                  isActive ? "bg-blue-500 text-white" : "text-black"
+                }`
+              }
             >
-              <Link>
-                <span className="p-3 flex flex-row gap-2 text-base">
-                  <span className="my-auto">{link.img}</span>
-                  {link.name}
-                </span>
-              </Link>
-            </button>
+              <span className="my-auto">{link.img}</span>
+              {link.name}
+            </NavLink>
           ))}
         </div>
       </div>

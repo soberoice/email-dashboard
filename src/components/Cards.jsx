@@ -4,12 +4,12 @@ import { FaArrowUp } from "react-icons/fa";
 export default function Cards() {
   return (
     <div className="flex w-full mt-3 justify-between">
-      <div className="border border-gray-200 rounded-xl w-96     p-6">
+      <div className="bg-white border border-gray-200 rounded-xl w-72     p-6">
         <img src="../public/email.png" alt="" />
         <div className="flex justify-between">
           <span className="flex flex-col mt-4">
             <span className="text-sm">Wallet Balance</span>{" "}
-            <span className="text-4xl">&#x20A6;0</span>
+            <span className="text-4xl">&#x20A6; 0</span>
           </span>
           <button
             className="w-28 h-10 rounded-lg mt-auto"
@@ -19,7 +19,7 @@ export default function Cards() {
           </button>
         </div>
       </div>
-      <div className="border border-gray-200 rounded-xl w-96     p-6">
+      <div className="bg-white border border-gray-200 rounded-xl w-72     p-6">
         <img src="../public/sms.png" alt="" />
         <div className="flex justify-between">
           <span className="flex flex-col mt-4">
@@ -38,7 +38,7 @@ export default function Cards() {
           </button>
         </div>
       </div>
-      <div className="border border-gray-200 rounded-xl w-96     p-6">
+      <div className="bg-white border border-gray-200 rounded-xl w-72 p-6">
         <img src="../public/carts.png" alt="" />
         <div className="flex justify-between">
           <span className="flex flex-col mt-4">

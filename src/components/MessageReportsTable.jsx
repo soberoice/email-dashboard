@@ -15,7 +15,7 @@ import { FaArrowUp } from "react-icons/fa";
 export default function MessageReportsTable() {
   return (
     <div
-      className="h-96 rounded-lg mt-10 mb-10"
+      className="h-96 rounded-lg mt-10 mb-10 bg-white"
       style={{ border: "1px solid #EAECF0", overflowY: "auto" }}
     >
       <p className="text-2xl text-semibold mb-4 p-4">Message Reports</p>
@@ -27,7 +27,7 @@ export default function MessageReportsTable() {
           variant="simple"
           className=" w-full"
         >
-          <Thead padding={"100px"} bg={"#F9FAFB"} height={"72px"}>
+          <Thead padding={"10px"} bg={"#F9FAFB"} height={"72px"}>
             <Tr className="text-left">
               <Th style={{ width: "680px" }}>SMS</Th>
               <Th style={{ width: "250px" }}>Receiver</Th>
@@ -44,6 +44,7 @@ export default function MessageReportsTable() {
                 <button
                   className="w-20 h-6 rounded-lg flex justify-center"
                   style={{
+                    lineHeight: "1",
                     backgroundColor: "#ECFDF3",
                     color: "green",
                     border: "1px solid #D3F9D8",
@@ -67,6 +68,7 @@ export default function MessageReportsTable() {
                 <button
                   className="w-20 h-6 rounded-lg flex justify-center"
                   style={{
+                    lineHeight: "1",
                     backgroundColor: "#ECFDF3",
                     color: "green",
                     border: "1px solid #D3F9D8",
@@ -90,6 +92,7 @@ export default function MessageReportsTable() {
                 <button
                   className="w-20 h-6 rounded-lg flex justify-center"
                   style={{
+                    lineHeight: "1",
                     backgroundColor: "#ECFDF3",
                     color: "green",
                     border: "1px solid #D3F9D8",
@@ -113,6 +116,7 @@ export default function MessageReportsTable() {
                 <button
                   className="w-20 h-6 rounded-lg flex justify-center"
                   style={{
+                    lineHeight: "1",
                     backgroundColor: "#ECFDF3",
                     color: "green",
                     border: "1px solid #D3F9D8",
@@ -136,6 +140,7 @@ export default function MessageReportsTable() {
                 <button
                   className="w-20 h-6 rounded-lg flex justify-center"
                   style={{
+                    lineHeight: "1",
                     backgroundColor: "#ECFDF3",
                     color: "green",
                     border: "1px solid #D3F9D8",
@@ -159,6 +164,7 @@ export default function MessageReportsTable() {
                 <button
                   className="w-20 h-6 rounded-lg flex justify-center"
                   style={{
+                    lineHeight: "1",
                     backgroundColor: "#ECFDF3",
                     color: "green",
                     border: "1px solid #D3F9D8",

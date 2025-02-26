@@ -12,6 +12,8 @@ import Pricing from "./components/Pricing";
 import Profile from "./components/Profile";
 import Developer from "./components/Developer";
 import Settings from "./components/Settings";
+import ApiConsole from "./components/ApiConsole";
+import Support from "./components/Support";
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +29,8 @@ function App() {
           <Route path="pricing" element={<Pricing />} />
           <Route path="profile" element={<Profile />} />
           <Route path="developer" element={<Developer />} />
+          <Route path="apiconsole" element={<ApiConsole />} />
+          <Route path="support" element={<Support />} />
           {/* {links.map((link) => (
               <Route path={`/${link.name}`} element={link.name} />
             ))} */}
