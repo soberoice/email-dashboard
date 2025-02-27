@@ -1,6 +1,9 @@
 import React from "react";
+import { MdOutlineEmail } from "react-icons/md";
 
 export default function PersonalInfo() {
+  const emailIcon = <MdOutlineEmail />;
+
   return (
     <div style={{ width: "837px", height: "450px" }} className="flex flex-col">
       <p className="text-bold text-2xl pb-8">Personal Information</p>
@@ -84,7 +87,7 @@ export default function PersonalInfo() {
                 width: "390px",
                 marginTop: "10px",
               }}
-              placeholder="hellouihut@gmail.com"
+              placeholder={` hellouihut@gmail.com`}
               className="px-4 rounded-xl"
               type="Email"
             />

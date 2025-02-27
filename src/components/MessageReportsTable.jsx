@@ -18,15 +18,17 @@ export default function MessageReportsTable() {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead sx={{ bgcolor: "#F9FAFB" }}>
             <TableRow>
-              <TableCell sx={{ width: "500px" }}>Transaction ID</TableCell>
-              <TableCell sx={{ width: "500px" }} align="right">
-                Transactions
+              <TableCell sx={{ width: "650px" }}>SMS</TableCell>
+              <TableCell sx={{ width: "240px" }} align="right">
+                Receiver
               </TableCell>
-              <TableCell sx={{ width: "150px" }} align="center">
-                Amount
+              <TableCell sx={{ width: "90px" }} align="center">
+                Status
               </TableCell>
-              <TableCell align="right">Time</TableCell>
-              <TableCell align="right">Time</TableCell>
+              <TableCell sx={{ width: "130px" }} align="left">
+                Time
+              </TableCell>
+              <TableCell align="right">Pages</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -36,7 +38,7 @@ export default function MessageReportsTable() {
               <TableCell component="th" scope="row">
                 ID2398439843
               </TableCell>
-              <TableCell align="right">Wallet Credit </TableCell>
+              <TableCell align="right">08069567130 </TableCell>
               <TableCell align="left">
                 <p
                   className="w-20 h-6 rounded-lg mt-auto mx-auto flex items-center justify-center"
@@ -46,15 +48,16 @@ export default function MessageReportsTable() {
                     border: "1px solid #D3F9D8",
                   }}
                 >
-                  &#x20A6; 10,000
+                  Sent
                 </p>
               </TableCell>
               <TableCell align="right">
-                <span className="flex flex-col">
+                <span className="flex flex-col text-left">
                   <span>02/03/2024</span>
                   <span style={{ color: "#495057" }}>at 1:35pm</span>
                 </span>
               </TableCell>
+              <TableCell align="right">2 </TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -62,7 +65,7 @@ export default function MessageReportsTable() {
               <TableCell component="th" scope="row">
                 ID2398439843
               </TableCell>
-              <TableCell align="right">Wallet Credit</TableCell>
+              <TableCell align="right">Automated Email</TableCell>
               <TableCell align="right">
                 <p
                   className="w-20 h-6 rounded-lg mt-auto mx-auto flex items-center justify-center"
@@ -72,15 +75,16 @@ export default function MessageReportsTable() {
                     border: "1px solid #D3F9D8",
                   }}
                 >
-                  &#x20A6; 10,000
+                  Sent
                 </p>
               </TableCell>
               <TableCell align="right">
-                <span className="flex flex-col">
+                <span className="flex flex-col text-left">
                   <span>02/03/2024</span>
                   <span style={{ color: "#495057" }}>at 1:35pm</span>
                 </span>
               </TableCell>
+              <TableCell align="right">354 </TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -88,7 +92,7 @@ export default function MessageReportsTable() {
               <TableCell component="th" scope="row">
                 ID2398439843
               </TableCell>
-              <TableCell align="right">Wallet Credit</TableCell>
+              <TableCell align="right">Automated Email</TableCell>
               <TableCell align="right">
                 <p
                   className="w-20 h-6 rounded-lg mt-auto mx-auto flex items-center justify-center"
@@ -98,15 +102,16 @@ export default function MessageReportsTable() {
                     border: "1px solid #D3F9D8",
                   }}
                 >
-                  &#x20A6; 10,000
+                  Sent{" "}
                 </p>
               </TableCell>
               <TableCell align="right">
-                <span className="flex flex-col">
+                <span className="flex flex-col text-left">
                   <span>02/03/2024</span>
                   <span style={{ color: "#495057" }}>at 1:35pm</span>
                 </span>
               </TableCell>
+              <TableCell align="right">223 </TableCell>
             </TableRow>
             <TableRow
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -123,15 +128,16 @@ export default function MessageReportsTable() {
                     color: "white",
                   }}
                 >
-                  &#x20A6; 10,000
+                  Pending
                 </p>
               </TableCell>
               <TableCell align="right">
-                <span className="flex flex-col">
+                <span className="flex flex-col text-left">
                   <span>02/03/2024</span>
                   <span style={{ color: "#495057" }}>at 1:35pm</span>
                 </span>
               </TableCell>
+              <TableCell align="right">23</TableCell>
             </TableRow>
           </TableBody>
         </Table>

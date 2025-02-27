@@ -1,20 +1,14 @@
 import React from "react";
 import SignupForm from "../components/SignupForm";
-import { MdOutlineEmail } from "react-icons/md";
 
 export default function Signup() {
   return (
-    <div className="flex h-full">
+    <div className="flex h-screen items-center">
       <div
         style={{ backgroundColor: "#F7F9FF" }}
-        className="flex-1 flex justify-center bg-blue-50"
+        className="flex-1 flex justify-center bg-blue-50 h-full items-center"
       >
-        <img
-          src="Clever.jpg"
-          alt=""
-          style={{ height: "675px" }}
-          className=" m-0"
-        />
+        <img src="Clever.jpg" alt="" className=" m-0 h-full" />
       </div>
       <div className="flex-1 flex justify-center">
         <SignupForm />

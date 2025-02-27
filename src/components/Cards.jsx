@@ -5,7 +5,7 @@ export default function Cards() {
   return (
     <div className="flex w-full mt-3 justify-between">
       <div className="bg-white border border-gray-200 rounded-xl w-80     p-6">
-        <img src="../public/email.png" alt="" />
+        <img src="/email.png" alt="" />
         <div className="flex justify-between">
           <span className="flex flex-col mt-4">
             <span className="text-sm">Wallet Balance</span>{" "}
@@ -20,7 +20,7 @@ export default function Cards() {
         </div>
       </div>
       <div className="bg-white border border-gray-200 rounded-xl w-80     p-6">
-        <img src="../public/sms.png" alt="" />
+        <img src="/sms.png" alt="" />
         <div className="flex justify-between">
           <span className="flex flex-col mt-4">
             <span className="text-sm">Total SMS Sent</span>{" "}
@@ -39,7 +39,7 @@ export default function Cards() {
         </div>
       </div>
       <div className="bg-white border border-gray-200 rounded-xl w-80 p-6">
-        <img src="../public/carts.png" alt="" />
+        <img src="/carts.png" alt="" />
         <div className="flex justify-between">
           <span className="flex flex-col mt-4">
             <span className="text-sm">Carts Recovered</span>{" "}

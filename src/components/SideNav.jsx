@@ -14,7 +14,7 @@ export default function SideNav() {
           <span className="flex text-2xl font-bold mt-auto mb-2">
             <img
               style={{ width: "40px", height: "40px" }}
-              src="../public/mail-02.png"
+              src="/mail-02.png"
               alt=""
             />
             <p className="my-auto">Good Mail</p>

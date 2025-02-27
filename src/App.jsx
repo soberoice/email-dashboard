@@ -13,28 +13,33 @@ import Developer from "./components/Developer";
 import Settings from "./components/Settings";
 import ApiConsole from "./components/ApiConsole";
 import Support from "./components/Support";
+import PaymentOptions from "./components/PaymentOptions";
+import { AmountProvider } from "./contexts/AmountContext";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" exact element={<Signup />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/forgot-password" element={<ResetPassword />} />
-        <Route exact path="/home" element={<Dashboard />}>
-          <Route path="dashboard" element={<DashboardContent />} />
-          <Route path="settings" element={<Settings />} />
-          <Route path="reports" element={<Reports />} />
-          <Route path="wallets" element={<Wallets />} />
-          <Route path="pricing" element={<Pricing />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="developer" element={<Developer />} />
-          <Route path="apiconsole" element={<ApiConsole />} />
-          <Route path="support" element={<Support />} />
-          {/* {links.map((link) => (
+      <AmountProvider>
+        <Routes>
+          <Route path="/" exact element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/forgot-password" element={<ResetPassword />} />
+          <Route exact path="/home" element={<Dashboard />}>
+            <Route path="dashboard" element={<DashboardContent />} />
+            <Route path="settings" element={<Settings />} />
+            <Route path="reports" element={<Reports />} />
+            <Route path="wallets" element={<Wallets />} />
+            <Route path="pricing" element={<Pricing />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="developer" element={<Developer />} />
+            <Route path="apiconsole" element={<ApiConsole />} />
+            <Route path="support" element={<Support />} />
+            <Route path="payment-options" element={<PaymentOptions />} />
+            {/* {links.map((link) => (
               <Route path={`/${link.name}`} element={link.name} />
             ))} */}
-        </Route>
-      </Routes>
+          </Route>
+        </Routes>
+      </AmountProvider>
     </BrowserRouter>
   );
 }
