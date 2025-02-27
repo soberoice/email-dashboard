@@ -64,6 +64,11 @@ export default function SignupForm() {
           <Link to="/signin" className="text-blue-700">
             Signin
           </Link>
+          <div>
+            <Link to="/home/dashboard" className="text-blue-700">
+              Dashboard
+            </Link>
+          </div>
         </p>
       </div>
     </div>
