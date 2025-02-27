@@ -59,16 +59,18 @@ export default function SignupForm() {
             <FaFacebook />
           </button>
         </span>
-        <p>
-          already have an account?{" "}
-          <Link to="/signin" className="text-blue-700">
-            Signin
-          </Link>
-          <div>
-            <Link to="/home/dashboard" className="text-blue-700">
-              Dashboard
+        <span>
+          <p>
+            already have an account?{" "}
+            <Link to="/signin" className="text-blue-700">
+              Signin
             </Link>
-          </div>
+          </p>
+        </span>
+        <p>
+          <Link to="/home/dashboard" className="text-blue-700">
+            Dashboard
+          </Link>
         </p>
       </div>
     </div>
