@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import RecentTransactions from "./RecentTransactions";
-import FundWalletForm from "./FundingWalletForm";
+// import FundWalletForm from "./FundingWalletForm";
+import VirtualAccountForm from "./VirtualAccountForm";
 
 export default function Wallets() {
   const [modal, setModal] = useState(false);
+  const [showVAF, setShowVAF] = useState(false);
   function toggleModal() {
     setModal(!modal);
+  }
+  function toggleVirtualAccountModal() {
+    setShowVAF(!showVAF);
   }
   return (
     <div>
@@ -54,6 +59,7 @@ export default function Wallets() {
                 backgroundColor: "#4263EB",
               }}
               className="text-white rounded-sm"
+              onClick={toggleVirtualAccountModal}
             >
               Get Started
             </button>
@@ -61,7 +67,12 @@ export default function Wallets() {
         </div>
         <RecentTransactions />
       </div>
-      {modal && <FundWalletForm toggleModal={toggleModal} />}
+      {/* {modal && <FundWalletForm toggleModal={toggleModal} />} */}
+      {showVAF && (
+        <VirtualAccountForm
+          toggleVirtualAccountModal={toggleVirtualAccountModal}
+        />
+      )}
     </div>
   );
 }

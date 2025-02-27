@@ -15,6 +15,7 @@ import ApiConsole from "./components/ApiConsole";
 import Support from "./components/Support";
 import PaymentOptions from "./components/PaymentOptions";
 import { AmountProvider } from "./contexts/AmountContext";
+import PaymentSuccess from "./components/PaymentSuccess";
 function App() {
   return (
     <BrowserRouter>
@@ -34,6 +35,7 @@ function App() {
             <Route path="apiconsole" element={<ApiConsole />} />
             <Route path="support" element={<Support />} />
             <Route path="payment-options" element={<PaymentOptions />} />
+            <Route path="payment-successful" element={<PaymentSuccess />} />
             {/* {links.map((link) => (
               <Route path={`/${link.name}`} element={link.name} />
             ))} */}
