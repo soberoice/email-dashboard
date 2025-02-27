@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RecentTransactions from "./RecentTransactions";
-import FundWalletForm from "./components/FundWalletForm.jsx";
+import FundWalletForm from "./fundWalletForm";
 
 export default function Wallets() {
   const [modal, setModal] = useState(false);
