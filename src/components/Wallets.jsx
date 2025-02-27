@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RecentTransactions from "./RecentTransactions";
 // import FundWalletForm from "./FundingWalletForm";
-import VirtualAccountForm from "./VirtualAccountForm";
+// import VirtualAccountForm from "./VirtualAccountForm";
 
 export default function Wallets() {
   const [modal, setModal] = useState(false);
@@ -68,11 +68,11 @@ export default function Wallets() {
         <RecentTransactions />
       </div>
       {/* {modal && <FundWalletForm toggleModal={toggleModal} />} */}
-      {showVAF && (
+      {/* {showVAF && (
         <VirtualAccountForm
           toggleVirtualAccountModal={toggleVirtualAccountModal}
         />
-      )}
+      )} */}
     </div>
   );
 }
