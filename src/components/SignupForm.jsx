@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router";
+import { useAuth } from "../API/authentication";
+import { Alert } from "@mui/material";
 
 export default function SignupForm() {
+  const { signUp, loading, error } = useAuth();
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    signUp(formData);
+    navigate("/home/dashboard");
+  };
+
   return (
     <div>
       <div
@@ -11,24 +31,48 @@ export default function SignupForm() {
       >
         <p className="text-3xl mt-2 mb-2">Create Your Account</p>
         <p className="text-sm text-gray-700">it's easy and free</p>
-        <form>
-          <label className="text-gray-500" htmlFor="name">
-            Your name
-          </label>
-          <input
-            placeholder="Enter your name"
-            className="focus:outline-none rounded-lg shadow-lg bg-white mb-8 w-80 p-3"
-            type="text"
-            id="name"
-          />
+        <form onSubmit={handleSubmit}>
+          <span className="flex">
+            <span>
+              <label className="text-gray-500" htmlFor="first_name">
+                First Name
+              </label>
+              <input
+                placeholder="Enter your name"
+                className="focus:outline-none rounded-lg shadow-lg bg-white mb-8 w-38 p-3"
+                type="text"
+                id="first_name"
+                name="first_name"
+                onChange={handleChange}
+                required
+              />
+            </span>
+            <span>
+              <label className="text-gray-500" htmlFor="last_name">
+                Last Name
+              </label>
+              <input
+                placeholder="Enter your name"
+                className="focus:outline-none rounded-lg shadow-lg bg-white mb-8 w-38 p-3"
+                type="text"
+                id="last_name"
+                name="last_name"
+                onChange={handleChange}
+                required
+              />
+            </span>
+          </span>
           <label className="text-gray-500" htmlFor="contact">
-            Your name
+            E-mail or phone number
           </label>
           <input
             placeholder="Enter your e-mail or phone number"
             className="focus:outline-none rounded-lg shadow-lg bg-white mb-8 w-80 p-3"
             type="text"
             id="contact"
+            name="email"
+            onChange={handleChange}
+            required
           />
           <label className="text-gray-500" htmlFor="password">
             Password
@@ -38,15 +82,20 @@ export default function SignupForm() {
             className="focus:outline-none rounded-lg shadow-lg bg-white mb-2 w-80 p-3"
             type="password"
             id="password"
+            name="password"
+            onChange={handleChange}
+            required
           />
           <p className="text-sm text-gray-400 mb-2">8 characters at least</p>
+          {error && <Alert severity="error">{error}</Alert>}
+          <button
+            type="submit"
+            className="hover:bg-blue-400 bg-blue-500 w-80 rounded-lg py-2 cursor-pointer text-white mb-2 mt-4"
+            disabled={loading}
+          >
+            {loading ? "Signing Up..." : "Registers"}
+          </button>
         </form>
-        <button
-          type="submit"
-          className="hover:bg-blue-400 bg-blue-500 w-80 rounded-lg py-2 cursor-pointer text-white mb-2"
-        >
-          Register
-        </button>
         <p className="text-sm text-gray-700">or via other accounts</p>
         <span>
           <button className="bg-white rounded-lg p-3 m-3 shadow-lg text-3xl w-14 h-14">
